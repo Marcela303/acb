@@ -1,0 +1,50 @@
+@font-face {
+  font-family: IbmPlexSans;
+  src: url('/assets/fonts/imb-plex-sans/IBMPlexSans-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: IbmPlexSansLight;
+  src: url('/assets/fonts/imb-plex-sans/IBMPlexSans-Light.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: IbmPlexMonoBold;
+  src: url('/assets/fonts/imb-plex-mono/IBMPlexMono-Bold.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: IbmPlexMonoMedium;
+  src: url('/assets/fonts/imb-plex-sans/IBMPlexMono-Medium.ttf') format("truetype");
+}
+
+@font-face {
+  font-family: IbmPlexMonoLight;
+  src: url('/assets/fonts/imb-plex-sans/IBMPlexMono-Thin.ttf') format("truetype");
+}
+
+
+
+$system-default-font-family-plex-bold: IbmPlexSans;
+$system-default-font-family-plex-light: IbmPlexSansLight;
+$system-default-font-family-mono: IbmPlexMonoBold;
+$system-default-font-family-mono-medium: IbmPlexMonoMedium;
+$system-default-font-family-mono-light: IbmPlexMonoLight;
+
+$heading-font-family: $system-default-font-family-plex-bold;
+$heading-font-weight: 600;
+
+$content-font-family: $system-default-font-family-plex-bold;
+$content-font-weight: 400;
+
+%font-heading {
+  font-family: $heading-font-family;
+  font-weight: $heading-font-weight;
+  /*color: $color-heading-text;*/
+}
+
+%font-content {
+  font-family: $content-font-family;
+  font-weight: $content-font-weight;
+  /*color: $color-text;*/
+}
