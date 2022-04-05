@@ -6,12 +6,10 @@
       </b-col>
 
       <b-col cols="8">
-        <div class="welcome__title">
-          <h1>
+          <h1 class="welcome__title">
             acb.studio
             <strong>digital product design</strong>
           </h1>
-        </div>
       </b-col>
     </b-row>
   </b-container>
@@ -31,17 +29,13 @@ export default {
     color: white;
   }
 
-  .welcome__title h1{
-   @include h1;
-    margin-bottom: 0;
-    color: white;
-
-  }
-
-  .welcome__title strong{
-   @include h1;
-    color: #9ea0a657;
-    display: block;
+  .welcome__title{      
+      margin-bottom: 0;
+      color: white;
+      strong{
+        color: #9ea0a657;
+        display: block;
+      }
   }
 
   .welcome__greeting {

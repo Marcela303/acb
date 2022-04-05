@@ -10,9 +10,9 @@ export default defineConfig({
     preprocessorOptions: {
       scss: {
         additionalData: `
-          @import "./src/design/_custom.scss";
           @import "./src/design/_fonts.scss";
           @import "./src/design/_mixin.scss";
+          @import "./src/design/_custom.scss";
         `
       }
     }
