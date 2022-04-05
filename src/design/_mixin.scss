@@ -15,11 +15,10 @@
 @mixin h3 {
   font-family: $system-default-font-family-plex-light;
   font-weight: lighter;
-  font-size: 20px;
-  line-height: 56;
+  font-size: 24px;
 }
 
-@mixin copy($fontweight:bold, $size:24px, $lineHeight:3, $spacing:0%, $font-family:$system-default-font-family-mono) {
+@mixin copy($fontweight:bold, $size:22px, $lineHeight:1.2, $spacing:0%, $font-family:$system-default-font-family-mono) {
   font-size: $size;
   line-height: $lineHeight;
   letter-spacing: $spacing;
@@ -35,21 +34,18 @@
 }
 
 @mixin copyLight {
-  @include copy($fontweight:light, $lineHeight:1.2);
+  @include copy($size:20px, $fontweight:200, $lineHeight:1.2);
 }
 
 @mixin copyMedium {
-  @include copy($fontweight:medium);
-
-
+  @include copy($fontweight:medium, $lineHeight:1.2);
 }
 
 @mixin copyMicro {
-  @include copyBold($size:16px, $fontweight: 500);
-
+  @include copy($size:16px, $fontweight: 500, $lineHeight:1.2 );
 }
 
-/*@mixin copyMicroBold {
-  @include copyMicro();
+@mixin copyMicroBold {
+  @include copyMicro;
   font-weight: bold;
-}*/
+}

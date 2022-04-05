@@ -13,7 +13,6 @@
           </h1>
         </div>
       </b-col>
-
     </b-row>
   </b-container>
 </template>
@@ -49,7 +48,6 @@ export default {
   .welcome__greeting {
     @include copy;
     margin-top: 1em;
-
   }
 }
 

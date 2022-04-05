@@ -2,14 +2,14 @@
   <b-container class="prologue container">
     <b-row>
       <b-col cols="4">
-        <p class="prologue__wwh">WhatWhyHow</p>
+        <h3 class="prologue__wwh">WhatWhyHow</h3>
       </b-col>
 
       <b-col cols="8">
-        <h2 class="prologue__title">Prologue</h2>
+        <h3 class="prologue__title">Prologue</h3>
 
         <div class="prologue__ourwhat">
-          <p class="prologue__subtitle">Our What</p>
+          <h3 class="prologue__subtitle">Our What</h3>
           <p class="prologue__desc">
             We create lovable digital products & services with a strong focus on its sustainable purpose.
             <strong>We analyse, create and build.</strong>
@@ -17,19 +17,17 @@
         </div>
 
         <div class="prologue_ourwhy">
-          <p class="prologue__subtitle">Our Why</p>
+          <h3 class="prologue__subtitle">Our Why</h3>
           <p class="prologue__desc">We empower the ones we work with to shape digital change. For them. For their work. For their clients. Keeping our planet in mind. Always.</p>
         </div>
 
         <div class="prologue_ourhow">
-          <p class="prologue__subtitle">Our How</p>
+          <h3 class="prologue__subtitle">Our How</h3>
           <p class="prologue__desc">We prototype on a deep understanding of all available data. Interlace digital concept, user interface design & creative code in an iterative manner, then.
             To pave the way for a sustainable backend. Doing this, we strongly believe in diverse teams & their strong expertise to make use of the individual perspectives in close collaboration.
           </p>
         </div>
-
       </b-col>
-
     </b-row>
   </b-container>
 </template>
@@ -49,6 +47,11 @@ export default {
     color: white;
   }
 
+  h3 {
+    color: white;
+    margin-bottom: 1em;
+  }
+
   strong {
     display: block;
     margin-top: 12px;
@@ -56,9 +59,9 @@ export default {
   }
 
   .prologue__title {
-  @include h1;
-  margin-bottom: 24px;
-  color: white;
+    @include h1;
+    margin-bottom: 1em;
+    color: white;
   }
 
   .prologue__wwh {
@@ -67,14 +70,12 @@ export default {
 
   .prologue__subtitle {
     @include copy;
-    margin-bottom: 0;
   }
 
   .prologue__desc {
-     @include copyLight;
-     margin-bottom: 2em;
+     @include h3;
+     margin-bottom: 3em;
   }
-
 }
 
 </style>

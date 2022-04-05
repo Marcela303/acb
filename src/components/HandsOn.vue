@@ -2,31 +2,27 @@
   <b-container class="handson">
     <b-row>
       <b-col cols="4">
-        <p>Clients</p>
+        <p class="handson__clients">Clients</p>
       </b-col>
 
       <b-col cols="8">
-        <div class="handson__title">
-          <h3>HandsOn</h3>
-        </div>
-        <div class="handson__sub">
-          <p>We work for people, we love to work for.</p>
+          <h2 class="handson__title">HandsOn</h2>
+          <h3 class="handson__sub">We work for people, we love to work for.</h3>
+
+        <div class="swiper-main">
+          <BrandsSwiper />
         </div>
       </b-col> 
-
     </b-row>
-
-    <Swiper />
   </b-container>
 </template>
+
 <script>
 
-import Swiper from './Swiper.vue'
+import BrandsSwiper from './BrandsSwiper.vue'
 
 export default {
-
-  components: { Swiper }
-
+  components: { BrandsSwiper }
 }
 
 </script>
@@ -34,17 +30,20 @@ export default {
 <style lang="scss">
 
 .handson {
-  padding-top: 4em;
+  padding-top: 5em;
+ 
+  .handson__clients {
+  @include copy;
+  }
 
+  .handson__title{
+    @include h1;
+    margin-bottom: 0.5em;
+    }
+
+  .handson__sub {
+    @include h3;
+  }
 }
-
-.handson__title h3{
-  @include h1;
-}
-
-.handson__sub {
-  @include copyLight;
-}
-
 
 </style>
