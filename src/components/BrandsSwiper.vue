@@ -4,33 +4,20 @@
     item-gap="16"
     :items-to-show="2"
   >
-  <template #item="{ data }">
-    <div class="brand">
-      <img :src="data.logo">
-      <p class="brand__name">{{ data.name }}</p>
-      <p class="brand__desc">{{ data.desc }}</p>
-    </div>
-  </template>
+    <template #item="{ data }">
+      <div class="brand">
+        <img :src="data.logo">
+        <p class="brand__name">{{ data.name }}</p>
+        <p class="brand__desc">{{ data.desc }}</p>
+      </div>
+    </template>
     
   </GSCarousel>
-
-  <!--<carousel class="brand" :items-to-show="1.5">
-    <slide v-for="brand in brands" :key="brand">
-      <img :src="brand.logo">
-      <p class="brand__name">{{ brand.name }}</p>
-      <p class="brand__desc">{{ brand.desc }}</p>
-    </slide>
-
-    <template #addons>
-      <navigation />
-      <pagination />
-    </template>
-  </carousel>-->
 </template>
 
 <script>
-import {brands} from '../assets/data/brands.json';
-import {GSCarousel} from 'gitart-scroll-carousel';
+import { brands } from '../assets/data/brands.json';
+import { GSCarousel } from 'gitart-scroll-carousel';
 import 'gitart-scroll-carousel/dist/style.css'
 
 export default {

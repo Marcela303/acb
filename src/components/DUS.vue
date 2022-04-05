@@ -8,7 +8,6 @@
 
     <div class="dus">
         <h2 class="dus__title">DUS</h2>
-
         <div class="dus-wrapper">
             <div>
                 <p class="dus__sub">How we work</p>
@@ -29,8 +28,7 @@
 </template>
 
 <script>
-export default {
-    
+export default {  
 }
 </script>
 

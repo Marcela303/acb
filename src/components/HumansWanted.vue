@@ -4,13 +4,18 @@
             <b-col cols="4">
                 <h3 class="humans-wanted__open">Open Positions</h3>
             </b-col>
+
             <b-col>
                 <h2  class="humans-wanted__title">Humans wanted</h2>
                 <p class="humans-wanted__desc">We are looking for people who might enjoy working with us. If this is given, everything else can be arranged.</p> 
 
-                <LetsTalkSwiper />
+                <div class="swiper-container">
+                    <LetsTalkSwiper />
+                </div>
                 
-                <DUS />
+                <div class="dus-container">
+                    <DUS />
+                </div> 
             </b-col>
         </b-row>
     </b-container>        
@@ -57,6 +62,11 @@ export default {
     .remote__desc {
         @include h3;
         color: white;
+    }
+
+    .swiper-container {
+        margin-bottom: 8em;
+ 
     }
 }
     
