@@ -37,15 +37,14 @@ export default {
 .humans-wanted {
     padding-top: 8em;
 
-<<<<<<< HEAD
-    .humans-wanted__open h2{
-        @include copyBold;
-=======
     .humans-wanted__open {
-        @include copy($fontweight: bold);
->>>>>>> 091222d6f527862f08e538b64453137e9cc4fda3
-        color: white;
-        margin-top: 1em;
+        padding-left: 3em;
+        
+        h2 {
+            @include copy($fontweight: bold);
+            color: white;
+            margin-top: 1em;
+        }  
     }
     
     .humans-wanted__title {
