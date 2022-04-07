@@ -2,7 +2,9 @@
     <b-container class="humans-wanted">
         <b-row>
             <b-col cols="3">
-                <h3 class="humans-wanted__open">Open Positions</h3>
+                <div class="humans-wanted__open">
+                    <h2>Open Positions</h2>
+                </div>
             </b-col>
 
             <b-col>
@@ -35,7 +37,7 @@ export default {
 .humans-wanted {
     padding-top: 8em;
 
-    .humans-wanted__open {
+    .humans-wanted__open h2{
         @include copyBold;
         color: white;
         margin-top: 1em;

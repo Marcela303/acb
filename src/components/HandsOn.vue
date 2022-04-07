@@ -3,12 +3,15 @@
   <b-container class="handson">
     <b-row >
       <b-col cols="3">
-        <p class="handson__clients">Clients</p>
+        <div class="handson__clients">
+           <h2>Clients</h2>
+        </div>
+       
       </b-col>
 
       <b-col cols="9">
-          <h2 class="handson__title">HandsOn</h2>
-          <h3 class="handson__sub">We work for people, we love to work for.</h3>
+          <h3 class="handson__title">HandsOn</h3>
+          <p class="handson__sub">We work for people, we love to work for.</p>
 
         <div class="brands-swiper-main" data-scroll-speed="1">
           <BrandsSwiper />
@@ -34,7 +37,7 @@ export default {
 .handson {
   padding-top: 5em;
 
-  .handson__clients {
+  .handson__clients h2{
   @include copyBold;
   }
 
