@@ -102,12 +102,17 @@ export default {
         text-decoration-thickness: 0px;
     }
 
-    .footer__agb ul li { 
-        text-decoration: underline;
-        text-underline-offset: 8px;
-        text-decoration-thickness: 0px;
-    }
-
+    .footer__agb {
+        padding-right: 2em;
+        ul {
+            li { 
+                text-decoration: underline;
+                text-underline-offset: 8px;
+                text-decoration-thickness: 0px;
+            }
+        } 
+    } 
+       
     .footer__eco-logos {
         margin-top: 8em;
 

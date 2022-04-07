@@ -19,15 +19,30 @@
   line-height: 1.2em;
 }
 
+@mixin copyBold($fontweight:bold, $size:38px, $lineHeight:1.2, $spacing:0%, $font-family:$system-default-font-family-plex-bold) {
+  font-size: $size;
+  line-height: $lineHeight;
+  letter-spacing: $spacing;
+  font-weight: $fontweight;
+
+  @if $fontweight == 200 {
+    font-family: $system-default-font-family-plex-light;
+  } @else if $fontweight == 500{
+    font-family: $system-default-font-family-mono-medium;
+  }else{
+    font-family: $system-default-font-family-mono;
+  }
+}
+
 @mixin copy($fontweight:bold, $size:22px, $lineHeight:1.2, $spacing:0%, $font-family:$system-default-font-family-mono) {
   font-size: $size;
   line-height: $lineHeight;
   letter-spacing: $spacing;
   font-weight: $fontweight;
 
-  @if $fontweight == light {
+  @if $fontweight == 200 {
     font-family: $system-default-font-family-plex-light;
-  } @else if $fontweight == medium{
+  } @else if $fontweight == 500{
     font-family: $system-default-font-family-mono-medium;
   }else{
     font-family: $system-default-font-family-mono;
@@ -35,15 +50,15 @@
 }
 
 @mixin copyLight {
-  @include copy($size:18px, $fontweight:200, $lineHeight:1.2);
+  @include copyBold($size:38px, $fontweight:200, $lineHeight:1.2);
 }
 
 @mixin copyMedium {
-  @include copy($fontweight:medium, $lineHeight:1.2);
+  @include copy($fontweight:500, $lineHeight:1.2);
 }
 
 @mixin copyMicro {
-  @include copy($size:14px, $fontweight: 500, $lineHeight:1.2 );
+  @include copy($size:19px, $fontweight: 500, $lineHeight:1.2 );
 }
 
 @mixin copyMicroBold {

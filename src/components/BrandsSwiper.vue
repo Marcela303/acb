@@ -80,7 +80,7 @@ export default defineComponent({
 
   .brand {
     .brand__name {
-    @include copy;
+    @include copyBold;
     margin-top: 1em;
     }
 

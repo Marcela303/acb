@@ -71,7 +71,7 @@ export default {
         padding-left: 10em;
 
         .dus__sub {
-        @include copy;
+        @include copyBold;
             color: white;
         }
 
