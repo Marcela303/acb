@@ -2,11 +2,11 @@
 <div>
   <b-container class="handson">
     <b-row >
-      <b-col cols="4">
+      <b-col cols="3">
         <p class="handson__clients">Clients</p>
       </b-col>
 
-      <b-col cols="8">
+      <b-col cols="9">
           <h2 class="handson__title">HandsOn</h2>
           <h3 class="handson__sub">We work for people, we love to work for.</h3>
 

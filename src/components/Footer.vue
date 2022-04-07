@@ -82,7 +82,8 @@ export default {
         margin-bottom: 4em;
 
         strong {
-            display: block
+            display: block;
+            font-weight: inherit;
         }
     }
 

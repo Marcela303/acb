@@ -1,11 +1,11 @@
 <template lang="">
   <b-container class="prologue container">
     <b-row>
-      <b-col cols="4">
+      <b-col cols="3">
         <h3 class="prologue__wwh">WhatWhyHow</h3>
       </b-col>
 
-      <b-col cols="8">
+      <b-col cols="9">
         <h3 class="prologue__title">Prologue</h3>
 
         <div class="prologue__ourwhat">
