@@ -13,7 +13,7 @@
           <h3 class="handson__title">HandsOn</h3>
           <p class="handson__sub">We work for people, we love to work for.</p>
 
-        <div class="brands-swiper-main" data-scroll-speed="1">
+        <div class="brands-swiper-main" data-scroll data-scroll-speed="1">
           <BrandsSwiper />
         </div>
       </b-col> 
@@ -37,17 +37,33 @@ export default {
 .handson {
   padding-top: 5em;
 
+<<<<<<< HEAD
   .handson__clients h2{
   @include copyBold;
+=======
+  .handson__clients {
+  @include copy($fontweight: bold);
+>>>>>>> 091222d6f527862f08e538b64453137e9cc4fda3
   }
 
   .handson__title{
     @include h1;
     margin-bottom: 0.3em;
-    }
+    left: 50px;
+    transition: 2s all ease;
+    .reached_scroll{
+      left: 0;
+      transition: 2s all ease;
+    }    
+  }
 
   .handson__sub {
     @include h3;
+    left: 50px;
+    .reached_scroll{
+      left: 0;
+      transition: 2s all ease;
+    } 
   }
 }
 

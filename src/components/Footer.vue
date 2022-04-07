@@ -72,7 +72,7 @@ export default {
         padding-left: 0;
 
         li {
-            @include copyLight;
+            @include copy;
             list-style: none;
             line-height: 2.2;
         }  
@@ -90,7 +90,7 @@ export default {
     .footer__address {
 
         span {
-        @include copyLight;
+        @include copy;
         display: block;
         line-height: 1.5;
         }  

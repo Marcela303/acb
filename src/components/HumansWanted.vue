@@ -7,7 +7,7 @@
                 </div>
             </b-col>
 
-            <b-col>
+            <b-col cols="9">
                 <h2  class="humans-wanted__title">Humans wanted</h2>
                 <p class="humans-wanted__desc">We are looking for people who might enjoy working with us. If this is given, everything else can be arranged.</p> 
 
@@ -37,8 +37,13 @@ export default {
 .humans-wanted {
     padding-top: 8em;
 
+<<<<<<< HEAD
     .humans-wanted__open h2{
         @include copyBold;
+=======
+    .humans-wanted__open {
+        @include copy($fontweight: bold);
+>>>>>>> 091222d6f527862f08e538b64453137e9cc4fda3
         color: white;
         margin-top: 1em;
     }

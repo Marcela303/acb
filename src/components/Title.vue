@@ -40,8 +40,13 @@ export default {
       }
   }
 
+<<<<<<< HEAD
   .welcome__greeting h2 {
     @include copyBold;
+=======
+  .welcome__greeting {
+    @include copy($fontweight: bold);
+>>>>>>> 091222d6f527862f08e538b64453137e9cc4fda3
     margin-top: 1em;
   }
 }

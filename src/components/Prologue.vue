@@ -11,14 +11,20 @@
         <h3 class="prologue__title">Prologue</h3>
 
         <div class="prologue__ourwhat">
+<<<<<<< HEAD
           <h4 class="prologue__subtitle bright" data-scroll data-scroll-speed="1" data-scroll-id="what">Our What</h4>
           <p class="prologue__desc" data-scroll data-scroll-speed="1" data-scroll-id="whatText">
+=======
+          <h3 class="prologue__subtitle bright" data-scroll data-scroll-speed="0.5" data-scroll-id="what">Our What</h3>
+          <p class="prologue__desc" data-scroll data-scroll-speed="0.5" data-scroll-id="whatText">
+>>>>>>> 091222d6f527862f08e538b64453137e9cc4fda3
             We create lovable digital products & services with a strong focus on its sustainable purpose.
             <strong>We analyse, create and build.</strong>
           </p>
         </div>
 
         <div class="prologue_ourwhy">
+<<<<<<< HEAD
           <h4 class="prologue__subtitle" data-scroll data-scroll-speed="1" data-scroll-id="why">Our Why</h4>
           <p class="prologue__desc" data-scroll data-scroll-speed="1" data-scroll-id="whyText">We empower the ones we work with to shape digital change. For them. For their work. For their clients. Keeping our planet in mind. Always.</p>
         </div>
@@ -26,6 +32,15 @@
         <div class="prologue_ourhow">
           <h4 class="prologue__subtitle" data-scroll data-scroll-speed="1" data-scroll-id="how">Our How</h4>
           <p class="prologue__desc" data-scroll data-scroll-speed="1" data-scroll-id="howText">We prototype on a deep understanding of all available data. Interlace digital concept, user interface design & creative code in an iterative manner, then.
+=======
+          <h3 class="prologue__subtitle" data-scroll data-scroll-speed="0.5" data-scroll-id="why">Our Why</h3>
+          <p class="prologue__desc" data-scroll data-scroll-speed="0.5" data-scroll-id="whyText">We empower the ones we work with to shape digital change. For them. For their work. For their clients. Keeping our planet in mind. Always.</p>
+        </div>
+
+        <div class="prologue_ourhow">
+          <h3 class="prologue__subtitle" data-scroll data-scroll-speed="0.5" data-scroll-id="how">Our How</h3>
+          <p class="prologue__desc" data-scroll data-scroll-speed="0.5" data-scroll-id="howText">We prototype on a deep understanding of all available data. Interlace digital concept, user interface design & creative code in an iterative manner, then.
+>>>>>>> 091222d6f527862f08e538b64453137e9cc4fda3
             To pave the way for a sustainable backend. Doing this, we strongly believe in diverse teams & their strong expertise to make use of the individual perspectives in close collaboration.
           </p>
         </div>
@@ -67,12 +82,17 @@ export default {
     color: white;
   }
 
+<<<<<<< HEAD
   .prologue__wwh h2{
     @include copyBold;
+=======
+  .prologue__wwh {
+    @include copy($fontweight: bold);
+>>>>>>> 091222d6f527862f08e538b64453137e9cc4fda3
   }
 
   .prologue__subtitle {
-    @include copyBold;
+    @include copy($fontweight: bold);
     opacity: 0.30;
     transition: 1s all ease;
     &.bright{
@@ -82,7 +102,7 @@ export default {
   }
 
   .prologue__desc {
-    @include h3;
+    @include h2;
     margin-bottom: 3em;
     opacity: 0.30;
     transition: 1s all ease;
