@@ -36,16 +36,12 @@
   }
 }
 
-@mixin copyLight {
-  @include copy($size:18px, $fontweight:200, $lineHeight:1.2);
-}
-
 @mixin copyMedium {
-  @include copy($fontweight:medium, $lineHeight:1.2);
+  @include copy($fontweight:500, $lineHeight:1.2);
 }
 
 @mixin copyMicro {
-  @include copy($size:14px, $fontweight: 500, $lineHeight:1.2 );
+  @include copy($size:19px, $fontweight: 500, $lineHeight:1.2 );
 }
 
 @mixin copyMicroBold {

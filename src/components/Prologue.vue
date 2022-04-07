@@ -66,11 +66,11 @@ export default {
   }
 
   .prologue__wwh {
-    @include copy;
+    @include copy($fontweight: bold);
   }
 
   .prologue__subtitle {
-    @include copy;
+    @include copy($fontweight: bold);
     opacity: 0.30;
     transition: 1s all ease;
     &.bright{

@@ -36,7 +36,7 @@ export default {
     padding-top: 8em;
 
     .humans-wanted__open {
-        @include copy;
+        @include copy($fontweight: bold);
         color: white;
         margin-top: 1em;
     }

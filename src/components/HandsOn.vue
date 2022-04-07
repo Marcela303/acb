@@ -35,7 +35,7 @@ export default {
   padding-top: 5em;
 
   .handson__clients {
-  @include copy;
+  @include copy($fontweight: bold);
   }
 
   .handson__title{

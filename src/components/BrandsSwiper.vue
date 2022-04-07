@@ -80,12 +80,12 @@ export default defineComponent({
 
   .brand {
     .brand__name {
-    @include copy;
+    @include copy($fontweight: bold);
     margin-top: 1em;
     }
 
     .brand__desc {
-     @include copyLight;
+     @include copy;
      margin-bottom: 0;
     }
   }

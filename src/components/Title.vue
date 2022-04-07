@@ -39,7 +39,7 @@ export default {
   }
 
   .welcome__greeting {
-    @include copy;
+    @include copy($fontweight: bold);
     margin-top: 1em;
   }
 }

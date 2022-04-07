@@ -71,12 +71,12 @@ export default {
         padding-left: 10em;
 
         .dus__sub {
-        @include copy;
+        @include copy($fontweight: bold);
             color: white;
         }
 
     .dus__desc {
-        @include copyLight;
+        @include copy;
             color: white;
             margin-bottom: 1em;
         }
@@ -86,7 +86,7 @@ export default {
         padding-left: 0rem;
     } 
         li{
-        @include copyLight;
+        @include copy;
         list-style: none;
         color: white;
     }
