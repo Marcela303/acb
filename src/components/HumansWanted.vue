@@ -10,7 +10,7 @@
                 <p class="humans-wanted__desc">We are looking for people who might enjoy working with us. If this is given, everything else can be arranged.</p> 
 
                 <div class="swiper-container">
-                    <LetsTalkSwiper />
+                    <HumansWantedSwiper />
                 </div>
                 
                 <div class="dus-container">
@@ -22,20 +22,18 @@
 </template>
 
 <script>
-
-import LetsTalkSwiper from './LetsTalkSwiper.vue';
-import DUS from './DUS.vue';
+import HumansWantedSwiper from './HumansWantedSwiper.vue'
+import DUS from './DUS.vue'
 
 export default {
-    components: { DUS, LetsTalkSwiper }
+    components: { DUS, HumansWantedSwiper }
 }
-
 </script>
 
 <style lang="scss">
 
 .humans-wanted {
-    padding-top: 5em;
+    padding-top: 8em;
 
     .humans-wanted__open {
         @include copy;
@@ -52,6 +50,7 @@ export default {
     .humans-wanted__desc {
         @include h3;
         color: white;
+        margin-bottom: 1.5em;
     }
 
     .remote__title {
@@ -66,7 +65,37 @@ export default {
 
     .swiper-container {
         margin-bottom: 8em;
- 
+
+        .carousel {
+            .carousel__prev, .carousel__next {
+                display: none;
+            }
+        
+            .carousel__viewport {
+                margin-bottom: 1em;
+
+                .carousel__slide {
+                    width: 70% !important;
+                }
+            }
+
+            .carousel__pagination {
+                justify-content: left;
+                padding-left: 0;
+
+                .carousel__pagination-button {
+                    margin: 0;
+                    border-radius: 0;
+                    background-color: #484848;
+                    width: 35px;
+                    height: 2px;
+                }
+
+                .carousel__pagination-button--active {
+                    background-color: #B8B8B8	;
+                }
+            }
+        }
     }
 }
     

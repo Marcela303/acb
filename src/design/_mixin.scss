@@ -16,6 +16,7 @@
   font-family: $system-default-font-family-plex-light;
   font-weight: lighter;
   font-size: 24px;
+  line-height: 1.2em;
 }
 
 @mixin copy($fontweight:bold, $size:22px, $lineHeight:1.2, $spacing:0%, $font-family:$system-default-font-family-mono) {
@@ -34,7 +35,7 @@
 }
 
 @mixin copyLight {
-  @include copy($size:20px, $fontweight:200, $lineHeight:1.2);
+  @include copy($size:18px, $fontweight:200, $lineHeight:1.2);
 }
 
 @mixin copyMedium {
@@ -42,7 +43,7 @@
 }
 
 @mixin copyMicro {
-  @include copy($size:16px, $fontweight: 500, $lineHeight:1.2 );
+  @include copy($size:14px, $fontweight: 500, $lineHeight:1.2 );
 }
 
 @mixin copyMicroBold {

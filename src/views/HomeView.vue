@@ -5,13 +5,15 @@ import Prologue from '../components/Prologue.vue'
 import HandsOn from '../components/HandsOn.vue'
 import HumansWanted from '../components/HumansWanted.vue'
 import LocomotiveScroll from "locomotive-scroll";
+import Footer from '../components/Footer.vue';
+import EnvironmentRibbon from '../components/EnvironmentRibbon.vue';
 
 export default {
   page: {
     title: 'Home',
     /*meta: [{ name: 'description', content: appConfig.description }],*/
   },
-  components: { Title, Prologue, HandsOn, HumansWanted },
+  components: { Title, Prologue, HandsOn, HumansWanted, Footer, EnvironmentRibbon },
    data() {
     return {
       scroller : null,
@@ -21,7 +23,7 @@ export default {
    methods: {
     setScroll() {
       this.scroller = new LocomotiveScroll({
-        el: this.$refs.handson,
+        el: this.$refs.container,
         smooth: true,
         offset: [0, 0],
         getSpeed: true,
@@ -49,7 +51,7 @@ export default {
 </script>
 
 <template>
-  <div class="main" ref="handson" data-scroll-container>
+  <div class="main" ref="container" data-scroll-container>
     <div class="main-site-container" data-scroll-section>
       <Title />
       <Prologue />
@@ -61,7 +63,15 @@ export default {
     
     <div class="humans-wanted-container" data-scroll-section>
       <HumansWanted />
-    </div>  
+    </div> 
+
+    <div class="footer-container">
+      <Footer />
+    </div> 
+
+    <div class="ribbon-container">
+      <EnvironmentRibbon />
+    </div> 
   </div>
  </template>
 
@@ -74,6 +84,16 @@ export default {
 
  .humans-wanted-container {
     background-color: black;
+ }
+
+ .footer-container {
+    padding-top: 5em;
+    padding-bottom: 4em;
+    background-color: black;
+ }
+
+ .ribbon-container {
+   height: 120px;
  }
 
  </style>
