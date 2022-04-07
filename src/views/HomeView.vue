@@ -65,11 +65,11 @@ export default {
       <HumansWanted />
     </div> 
 
-    <div class="footer-container">
+    <div class="footer-container" data-scroll-section>
       <Footer />
     </div> 
 
-    <div class="ribbon-container">
+    <div class="ribbon-container" data-scroll-section>
       <EnvironmentRibbon />
     </div> 
   </div>

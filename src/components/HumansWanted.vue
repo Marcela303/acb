@@ -1,7 +1,7 @@
 <template lang="">
     <b-container class="humans-wanted">
         <b-row>
-            <b-col cols="4">
+            <b-col cols="3">
                 <h3 class="humans-wanted__open">Open Positions</h3>
             </b-col>
 

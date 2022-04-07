@@ -1,11 +1,11 @@
 <template lang="">
   <b-container class="welcome">
     <b-row>
-      <b-col cols="4">
+      <b-col cols="3">
           <p class="welcome__greeting">Guten morgen.</p>
       </b-col>
 
-      <b-col cols="8">
+      <b-col cols="9">
           <h1 class="welcome__title">
             acb.studio
             <strong>digital product design</strong>

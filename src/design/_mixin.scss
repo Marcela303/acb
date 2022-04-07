@@ -1,21 +1,21 @@
 @mixin h1{
   font-family: $system-default-font-family-plex-bold;
   font-weight: bold;
-  font-size: 56px;
+  font-size: 134px;
   line-height: 1.2;
 }
 
 @mixin h2 {
   font-family: $system-default-font-family-plex-bold;
   font-weight: bold;
-  font-size: 40px;
+  font-size: 100px;
   line-height: 100;
 }
 
 @mixin h3 {
   font-family: $system-default-font-family-plex-light;
   font-weight: lighter;
-  font-size: 24px;
+  font-size: 56px;
   line-height: 1.2em;
 }
 
