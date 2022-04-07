@@ -9,7 +9,7 @@
           <h2 class="handson__title">HandsOn</h2>
           <h3 class="handson__sub">We work for people, we love to work for.</h3>
 
-        <div class="swiper-main">
+        <div class="brands-swiper-main">
           <BrandsSwiper />
         </div>
       </b-col> 
@@ -31,14 +31,14 @@ export default {
 
 .handson {
   padding-top: 5em;
- 
+
   .handson__clients {
   @include copy;
   }
 
   .handson__title{
     @include h1;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.3em;
     }
 
   .handson__sub {
