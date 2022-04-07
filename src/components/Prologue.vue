@@ -9,21 +9,21 @@
         <h3 class="prologue__title">Prologue</h3>
 
         <div class="prologue__ourwhat">
-          <h3 class="prologue__subtitle bright" data-scroll data-scroll-speed="1" data-scroll-id="what">Our What</h3>
-          <p class="prologue__desc" data-scroll data-scroll-speed="1" data-scroll-id="whatText">
+          <h3 class="prologue__subtitle bright" data-scroll data-scroll-speed="0.5" data-scroll-id="what">Our What</h3>
+          <p class="prologue__desc" data-scroll data-scroll-speed="0.5" data-scroll-id="whatText">
             We create lovable digital products & services with a strong focus on its sustainable purpose.
             <strong>We analyse, create and build.</strong>
           </p>
         </div>
 
         <div class="prologue_ourwhy">
-          <h3 class="prologue__subtitle" data-scroll data-scroll-speed="1" data-scroll-id="why">Our Why</h3>
-          <p class="prologue__desc" data-scroll data-scroll-speed="1" data-scroll-id="whyText">We empower the ones we work with to shape digital change. For them. For their work. For their clients. Keeping our planet in mind. Always.</p>
+          <h3 class="prologue__subtitle" data-scroll data-scroll-speed="0.5" data-scroll-id="why">Our Why</h3>
+          <p class="prologue__desc" data-scroll data-scroll-speed="0.5" data-scroll-id="whyText">We empower the ones we work with to shape digital change. For them. For their work. For their clients. Keeping our planet in mind. Always.</p>
         </div>
 
         <div class="prologue_ourhow">
-          <h3 class="prologue__subtitle" data-scroll data-scroll-speed="1" data-scroll-id="how">Our How</h3>
-          <p class="prologue__desc" data-scroll data-scroll-speed="1" data-scroll-id="howText">We prototype on a deep understanding of all available data. Interlace digital concept, user interface design & creative code in an iterative manner, then.
+          <h3 class="prologue__subtitle" data-scroll data-scroll-speed="0.5" data-scroll-id="how">Our How</h3>
+          <p class="prologue__desc" data-scroll data-scroll-speed="0.5" data-scroll-id="howText">We prototype on a deep understanding of all available data. Interlace digital concept, user interface design & creative code in an iterative manner, then.
             To pave the way for a sustainable backend. Doing this, we strongly believe in diverse teams & their strong expertise to make use of the individual perspectives in close collaboration.
           </p>
         </div>
