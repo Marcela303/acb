@@ -1,6 +1,7 @@
 <template lang="">
+<div>
   <b-container class="handson">
-    <b-row>
+    <b-row >
       <b-col cols="4">
         <p class="handson__clients">Clients</p>
       </b-col>
@@ -9,19 +10,20 @@
           <h2 class="handson__title">HandsOn</h2>
           <h3 class="handson__sub">We work for people, we love to work for.</h3>
 
-        <div class="swiper-main">
+        <div class="swiper-main" data-scroll data-scroll-speed="1">
           <BrandsSwiper />
         </div>
       </b-col> 
     </b-row>
   </b-container>
+</div>
 </template>
 
 <script>
 
 import BrandsSwiper from './BrandsSwiper.vue'
 
-export default {
+export default {  
   components: { BrandsSwiper }
 }
 

@@ -23,8 +23,8 @@
 
 <script>
 
-import LetsTalkSwiper from './LetsTalkSwiper.vue'
-import DUS from './DUS.vue'
+import LetsTalkSwiper from './LetsTalkSwiper.vue';
+import DUS from './DUS.vue';
 
 export default {
     components: { DUS, LetsTalkSwiper }

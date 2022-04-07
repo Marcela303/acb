@@ -2,9 +2,9 @@
   "name": "acb.studio",
   "version": "0.0.0",
   "author": {
-    "name" : "Marcela Meza Artmann"
-  }, 
-  "private":true,
+    "name": "Marcela Meza Artmann"
+  },
+  "private": true,
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -16,7 +16,10 @@
     "babel-plugin-transform-require-context": "^0.1.1",
     "bootstrap": "^5.1.3",
     "bootstrap-vue-3": "^0.1.9",
+    "gasp": "^0.0.2",
     "gitart-scroll-carousel": "^0.0.3",
+    "gsap": "file:gsap-bonus.tgz",
+    "locomotive-scroll": "^4.1.4",
     "pinia": "^2.0.11",
     "vue": "^3.2.31",
     "vue-router": "^4.0.12",

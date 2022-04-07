@@ -4,28 +4,62 @@ import Title from '../components/Title.vue'
 import Prologue from '../components/Prologue.vue'
 import HandsOn from '../components/HandsOn.vue'
 import HumansWanted from '../components/HumansWanted.vue'
+import LocomotiveScroll from "locomotive-scroll";
 
 export default {
   page: {
     title: 'Home',
     /*meta: [{ name: 'description', content: appConfig.description }],*/
   },
-  components: { Title, Prologue, HandsOn, HumansWanted }
+  components: { Title, Prologue, HandsOn, HumansWanted },
+   data() {
+    return {
+      scroller : null,
+      scrollElements: ['what', 'why', 'how', 'whatText', 'whyText', 'howText']
+    }
+  },
+   methods: {
+    setScroll() {
+      this.scroller = new LocomotiveScroll({
+        el: this.$refs.handson,
+        smooth: true,
+        offset: [0, 0],
+        getSpeed: true,
+        getDirection: true,        
+      });
+      this.scroller.on('call', (func, way, obj, id) => {
+            //using modularjs
+            //this.call(func[0], { way, obj }, func[1], func[2]);
+        });
+
+        this.scroller.on('scroll', (args) => {
+          for (const scrollElement of this.scrollElements) {
+            if(typeof args.currentElements[scrollElement] === 'object') {
+              let progress = args.currentElements[scrollElement].progress;
+              progress > 0.45 && progress < 0.65 ? args.currentElements[scrollElement].el.classList.add("bright") : args.currentElements[scrollElement].el.classList.remove("bright") ;              
+            }
+          }
+        });
+    },
+  },
+  mounted() {
+    this.setScroll();
+  },
 }
 </script>
 
 <template>
-  <div class="main">
-    <div class="main-site-container">
+  <div class="main" ref="handson" data-scroll-container>
+    <div class="main-site-container" data-scroll-section>
       <Title />
       <Prologue />
     </div>  
 
-    <div>
+    <div data-scroll-section>
       <HandsOn />
     </div>  
     
-    <div class="humans-wanted-container">
+    <div class="humans-wanted-container" data-scroll-section>
       <HumansWanted />
     </div>  
   </div>
