@@ -5,7 +5,7 @@
                 <h3 class="humans-wanted__open">Open Positions</h3>
             </b-col>
 
-            <b-col>
+            <b-col cols="9">
                 <h2  class="humans-wanted__title">Humans wanted</h2>
                 <p class="humans-wanted__desc">We are looking for people who might enjoy working with us. If this is given, everything else can be arranged.</p> 
 

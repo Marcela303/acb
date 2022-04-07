@@ -80,7 +80,7 @@ export default {
   }
 
   .prologue__desc {
-    @include h3;
+    @include h2;
     margin-bottom: 3em;
     opacity: 0.30;
     transition: 1s all ease;

@@ -1,32 +1,34 @@
 @mixin h1{
   font-family: $system-default-font-family-plex-bold;
   font-weight: bold;
-  font-size: 134px;
-  line-height: 1.2;
+  font-size: 104px !important;
+  line-height: 128px;
+  letter-spacing: -0.02em;
 }
 
 @mixin h2 {
-  font-family: $system-default-font-family-plex-bold;
+  font-family: $system-default-font-family-plex-light;
   font-weight: bold;
-  font-size: 100px;
-  line-height: 100;
+  font-size: 40px;
+  line-height: 56px;
+  letter-spacing: -0.02em;
 }
 
 @mixin h3 {
   font-family: $system-default-font-family-plex-light;
   font-weight: lighter;
-  font-size: 56px;
+  font-size: 24px;
   line-height: 1.2em;
 }
 
-@mixin copy($fontweight:bold, $size:22px, $lineHeight:1.2, $spacing:0%, $font-family:$system-default-font-family-mono) {
+@mixin copy($fontweight:light, $size:24px, $lineHeight:38px, $spacing:-0.02em, $font-family:$system-default-font-family-plex-light) {
   font-size: $size;
   line-height: $lineHeight;
   letter-spacing: $spacing;
   font-weight: $fontweight;
 
-  @if $fontweight == light {
-    font-family: $system-default-font-family-plex-light;
+  @if $fontweight == bold {
+    font-family: $system-default-font-family-plex-bold;
   } @else if $fontweight == medium{
     font-family: $system-default-font-family-mono-medium;
   }else{
