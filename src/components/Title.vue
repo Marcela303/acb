@@ -2,7 +2,9 @@
   <b-container class="welcome">
     <b-row>
       <b-col cols="3">
-          <p class="welcome__greeting">Guten morgen.</p>
+        <div class="welcome__greeting">
+          <h2>Guten morgen.</h2>
+        </div>          
       </b-col>
 
       <b-col cols="9">
@@ -25,7 +27,7 @@ export default {
 .welcome{
   padding-top: 4em;
 
-  p {
+  h2 {
     color: white;
   }
 
@@ -39,8 +41,12 @@ export default {
   }
 
   .welcome__greeting {
-    @include copy($fontweight: bold);
-    margin-top: 1em;
+    padding-left: 3em;
+    margin-top: 4em;
+
+    h2 {
+      @include copy($fontweight: bold);
+    }   
   }
 }
 

@@ -2,7 +2,9 @@
     <b-container class="humans-wanted">
         <b-row>
             <b-col cols="3">
-                <h3 class="humans-wanted__open">Open Positions</h3>
+                <div class="humans-wanted__open">
+                    <h2>Open Positions</h2>
+                </div>
             </b-col>
 
             <b-col cols="9">
@@ -36,9 +38,13 @@ export default {
     padding-top: 8em;
 
     .humans-wanted__open {
-        @include copy($fontweight: bold);
-        color: white;
-        margin-top: 1em;
+        padding-left: 3em;
+        
+        h2 {
+            @include copy($fontweight: bold);
+            color: white;
+            margin-top: 1em;
+        }  
     }
     
     .humans-wanted__title {

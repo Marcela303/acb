@@ -2,7 +2,9 @@
   <b-container class="prologue container">
     <b-row>
       <b-col cols="3">
-        <h2 class="prologue__wwh">WhatWhyHow</h2>
+        <div class="prologue__wwh">
+          <h2>WhatWhyHow</h2>
+        </div>
       </b-col>
 
       <b-col cols="9">
@@ -46,11 +48,11 @@ export default {
   &.container{
     max-width: 98% !important;
   }
-  p {
+  h2, h4 {
     color: white;
   }
 
-  h3 {
+  h3{
     color: white;
     margin-bottom: 1em;
   }
@@ -68,7 +70,11 @@ export default {
   }
 
   .prologue__wwh {
-    @include copy($fontweight: bold);
+    padding-left: 3em;
+
+    h2{
+      @include copy($fontweight: bold, $size: 24px);
+    }
   }
 
   .prologue__subtitle {
@@ -86,6 +92,7 @@ export default {
     margin-bottom: 3em;
     opacity: 0.30;
     transition: 1s all ease;
+    color: white;
     &.bright{
       opacity: 1;
       transition: 1s all ease;

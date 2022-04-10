@@ -3,7 +3,10 @@
   <b-container class="handson">
     <b-row >
       <b-col cols="3">
-        <p class="handson__clients">Clients</p>
+        <div class="handson__clients">
+           <h2>Clients</h2>
+        </div>
+       
       </b-col>
 
       <b-col cols="9">
@@ -35,7 +38,11 @@ export default {
   padding-top: 5em;
 
   .handson__clients {
-  @include copy($fontweight: bold);
+    padding-left: 3em;
+
+    h2{
+      @include copy($fontweight: bold);
+    }
   }
 
   .handson__title{

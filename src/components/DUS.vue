@@ -1,16 +1,16 @@
 <template lang="">
     <div class="remote">
-        <h2 class="remote__title">Remote first.
+        <h3 class="remote__title">Remote first.
             <strong>Always in person.</strong>
-        </h2>
+        </h3>
         <p class="remote__desc">acb.studio is wherever we can support. We’re fully remote. But we also feel home in some places.</p>
     </div>
 
     <div class="dus">
-        <h2 class="dus__title">DUS</h2>
+        <h3 class="dus__title">DUS</h3>
         <div class="dus-wrapper">
             <div>
-                <p class="dus__sub">How we work</p>
+                <h4 class="dus__sub">How we work</h4>
                 <p class="dus__desc">
                     Humans in different cities from different countries are creating heartful products. 
                     And because the right people aren't always around, 
@@ -21,7 +21,7 @@
             </div>
 
             <div>
-                <p class="dus__sub">Our base</p>
+                <h4 class="dus__sub">Our base</h4>
                 <p class="dus__desc">
                     Just pass by our Düsseldorf studio, send some digital words 
                     or give us a classic call.
@@ -37,7 +37,7 @@
             </div>
 
             <div>
-                <p class="dus__sub">Our Hubs</p>
+                <h4 class="dus__sub">Our Hubs</h4>
                 <p class="dus__desc">And yes: if you are around Valencia or Hamburg, just contact our base and we'll connect you to our people</p>
             </div>
         </div>       
