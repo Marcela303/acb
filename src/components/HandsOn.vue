@@ -7,8 +7,8 @@
       </b-col>
 
       <b-col cols="9">
-          <h2 class="handson__title">HandsOn</h2>
-          <h3 class="handson__sub">We work for people, we love to work for.</h3>
+          <h2 class="handson__title" data-scroll data-scroll-id="handson">HandsOn</h2>
+          <h3 class="handson__sub" data-scroll data-scroll-id="handson-p">We work for people, we love to work for.</h3>
 
         <div class="brands-swiper-main" data-scroll data-scroll-speed="1">
           <BrandsSwiper />
@@ -41,18 +41,22 @@ export default {
   .handson__title{
     @include h1;
     margin-bottom: 0.3em;
-    left: 50px;
+    left: -50px;
     transition: 2s all ease;
-    .reached_scroll{
+    opacity: 0;
+    &.reached_scroll{
       left: 0;
       transition: 2s all ease;
+      opacity: 1;
     }    
   }
 
   .handson__sub {
     @include h3;
-    left: 50px;
-    .reached_scroll{
+    left: -50px;
+    opacity: 0;
+    &.reached_scroll{
+      opacity: 1;
       left: 0;
       transition: 2s all ease;
     } 

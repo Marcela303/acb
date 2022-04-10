@@ -2,7 +2,7 @@
   <b-container class="prologue container">
     <b-row>
       <b-col cols="3">
-        <h3 class="prologue__wwh">WhatWhyHow</h3>
+        <h2 class="prologue__wwh">WhatWhyHow</h2>
       </b-col>
 
       <b-col cols="9">
@@ -43,7 +43,9 @@ export default {
 
 .prologue {
   padding-top: 8em;
-
+  &.container{
+    max-width: 98% !important;
+  }
   p {
     color: white;
   }

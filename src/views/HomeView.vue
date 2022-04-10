@@ -17,7 +17,8 @@ export default {
    data() {
     return {
       scroller : null,
-      scrollElements: ['what', 'why', 'how', 'whatText', 'whyText', 'howText']
+      scrollElements: ['what', 'why', 'how', 'whatText', 'whyText', 'howText'],
+      effectElements: ['handson', 'handson-p']
     }
   },
    methods: {
@@ -27,7 +28,8 @@ export default {
         smooth: true,
         offset: [0, 0],
         getSpeed: true,
-        getDirection: true,        
+        getDirection: true,  
+        lerp: 0.05     
       });
       this.scroller.on('call', (func, way, obj, id) => {
             //using modularjs
@@ -39,6 +41,13 @@ export default {
             if(typeof args.currentElements[scrollElement] === 'object') {
               let progress = args.currentElements[scrollElement].progress;
               progress > 0.45 && progress < 0.65 ? args.currentElements[scrollElement].el.classList.add("bright") : args.currentElements[scrollElement].el.classList.remove("bright") ;              
+            }
+          }
+          for (const effectElement of this.effectElements) {
+            if(typeof args.currentElements[effectElement] === 'object') {
+              let progress = args.currentElements[effectElement].progress;
+              //progress > 0.45 && progress < 0.65 ? args.currentElements[scrollElement].el.classList.add("bright") : args.currentElements[scrollElement].el.classList.remove("bright") ;  
+              args.currentElements[effectElement].el.classList.add("reached_scroll")            
             }
           }
         });

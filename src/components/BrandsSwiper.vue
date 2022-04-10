@@ -1,5 +1,5 @@
 <template lang="">
-  <Carousel>
+  <Carousel :items-to-show="1.5" :itemsToScroll="1" :transition="1000">
     <Slide v-for='brand in brands' :key='brand'>
       <div class="brand">
         <div class="carousel__item">
@@ -25,7 +25,7 @@ import { Pagination } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 
 export default defineComponent({
-  name: 'ExamplePagination',
+  name: 'Brand Carousel',
   components: {
   Pagination,
   Carousel,
@@ -38,23 +38,7 @@ export default defineComponent({
     
     // carousel settingss
     settings: {
-      itemsToShow: 1,
-      snapAlign: 'center',
-    },
-
-    // breakpoints are mobile first
-    // any settings not specified will fallback to the carousel settings
-    breakpoints: {
-      // 700px and up
-      700: {
-        itemsToShow: 2,
-        snapAlign: 'center',
-      },
-      // 1024 and up
-      1024: {
-        itemsToShow: 1,
-        snapAlign: 'start',
-      },
+      
     },
   }),
 });
@@ -74,8 +58,8 @@ export default defineComponent({
 
   .carousel__slide {
     display: block;
-    margin-right: 6em;
     text-align: left;
+    margin-right: 4em;
   }
 
   .brand {
@@ -99,7 +83,6 @@ export default defineComponent({
       margin-bottom: 1em;
 
       .carousel__slide {
-        width: 73% !important;
       }
     }
 
