@@ -1,6 +1,16 @@
 <template lang="">
   <b-container class="prologue container">
     <b-row>
+
+      <b-col cols="3">
+        &nbsp;
+      </b-col>
+
+      <b-col cols="9">
+        <h3 class="prologue__title">Prologue</h3>
+      </b-col>
+
+
       <b-col cols="3">
         <div class="prologue__wwh">
           <h2>WhatWhyHow</h2>
@@ -8,8 +18,6 @@
       </b-col>
 
       <b-col cols="9">
-        <h3 class="prologue__title">Prologue</h3>
-
         <div class="prologue__ourwhat">
           <h3 class="prologue__subtitle bright" data-scroll data-scroll-speed="0.5" data-scroll-id="what">Our What</h3>
           <p class="prologue__desc" data-scroll data-scroll-speed="0.5" data-scroll-id="whatText">

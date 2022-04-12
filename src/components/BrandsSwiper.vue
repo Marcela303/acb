@@ -1,5 +1,5 @@
 <template lang="">
-  <Carousel :items-to-show="1.5" :itemsToScroll="1" :transition="1000">
+  <Carousel :items-to-show="1.5" :itemsToScroll="1" :transition="1000" :snapAlign="start">
     <Slide v-for='brand in brands' :key='brand'>
       <div class="brand">
         <div class="carousel__item">
@@ -49,7 +49,15 @@ export default defineComponent({
 
 .brands-swiper-main {
   margin-top: 3em;
-
+  cursor: move; /* fallback if grab cursor is unsupported */
+  cursor: grab;
+  cursor: -moz-grab;
+  cursor: -webkit-grab;
+  &:active{
+    cursor: grabbing;
+    cursor: -moz-grabbing;
+    cursor: -webkit-grabbing;
+  }
   img {
     filter: invert(1);
     width: 80px;
@@ -59,7 +67,7 @@ export default defineComponent({
   .carousel__slide {
     display: block;
     text-align: left;
-    margin-right: 4em;
+    /*margin-right: 4em;*/
   }
 
   .brand {

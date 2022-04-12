@@ -36,7 +36,9 @@ export default {
 
 .handson {
   padding-top: 5em;
-
+  &.container{
+    width: 97% !important;
+  }
   .handson__clients {
     padding-left: 3em;
 
